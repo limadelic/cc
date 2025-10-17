@@ -22,6 +22,6 @@ Initialize the voyage directory structure with example files.
    - Search for Magellan
    - Click Elcano link
    - Click Getaria link
-   - Click first image
+   - Click "Getaria view from the sea" image
    ```
 6. Tell the user "Voyage structure initialized. Run `/voyage getaria` to test."
