@@ -5,15 +5,18 @@ Plugin marketplace for Claude Code.
 ## Install
 
 ```
-/plugin marketplace add <your-github-username>/cc
-/plugin install magellan@ukg
+/plugin marketplace add limadelic/cc
+/plugin install magellan@limadelic
 ```
+
+Restart Claude Code after installation.
 
 ## Plugins
 
 **magellan** - Exploratory browser voyage toolkit
+- `/init` - bootstrap voyage structure with example files
 - `/voyage` - orchestrate Playwright test scenarios from markdown files
-- `elkano` - subagent that handles browser actions via Playwright MCP
 - `/a` - quick delegation to any subagent
+- `elkano` - subagent that handles browser actions via Playwright MCP
 
-See `marketplace/plugins/magellan/README.md` for details.
+See `plugins/magellan/README.md` for details.
