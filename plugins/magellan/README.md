@@ -33,5 +33,5 @@ Restart Claude Code, then run `/voyage <route-name>` to test.
 
 ## Notes
 
-- The plugin does not install or manage the Playwright MCP server; ensure `@playwright/mcp` is available and connected in your project.
+- The Playwright MCP server is automatically configured when you install this plugin.
 - Elkano never emits raw MCP payloads—only terse status messages or YAML snippets when discovering new map entries.
