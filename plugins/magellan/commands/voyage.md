@@ -7,8 +7,8 @@ scope: project
 Open with “Preparing for the `$1` voyage…”, announce each `Destination:` before executing it, keep Elkano at the helm for every browser maneuver, and narrate progress in a pilot’s voice.
 
 **Ground rules**
-- You MUST invoke `/a elkano …` for every browser-related action. No direct Playwright tool usage.
-- Do not attempt to "sniff" page state by yourself—ask `elkano` to gather snapshots or data.
+- Delegate all browser actions to the elkano subagent. No direct Playwright tool usage.
+- Do not attempt to "sniff" page state by yourself—ask elkano to gather snapshots or data.
 - Keep a running Todo list so the user can track the scenario.
 - Never show file operations (reading maps.yaml, chart.yaml, etc.) to the user. Work with these files silently in the background.
 
@@ -25,8 +25,8 @@ Open with “Preparing for the `$1` voyage…”, announce each `Destination:` b
    - For each step in that plan:
      1. Expand chart variables in the step text (supports nested keys like `$env.user`).
      2. Look up any element references in `voyages/maps.yaml` and expand them inline (e.g., if step says "Click applicants link" and maps.yaml has `applicants_link`, expand to the actual locator). Never mention maps.yaml in the elkano prompt.
-     3. Issue the browser action via `/a elkano …` with the expanded locator.
-     4. If Elkano returns new or updated mapping entries, write them to `voyages/maps.yaml` immediately.
+     3. Delegate the browser action to the elkano subagent with the expanded locator.
+     4. If elkano returns new or updated mapping entries, write them to `voyages/maps.yaml` immediately.
      5. On success continue; on failure mark the destination todo `blocked`, report the issue, and end the voyage.
    - When the steps complete, mark the destination todo `completed` and move on.
 

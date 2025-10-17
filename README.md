@@ -16,7 +16,6 @@ Restart Claude Code after installation.
 **magellan** - Exploratory browser voyage toolkit
 - `/init` - bootstrap voyage structure with example files
 - `/voyage` - orchestrate Playwright test scenarios from markdown files
-- `/a` - quick delegation to any subagent
 - `elkano` - subagent that handles browser actions via Playwright MCP
 
 See `plugins/magellan/README.md` for details.
