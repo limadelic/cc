@@ -1,0 +1,13 @@
+{
+  "name": "limadelic",
+  "owner": {
+    "name": "limadelic"
+  },
+  "plugins": [
+    {
+      "name": "magellan",
+      "source": "./plugins/magellan",
+      "description": "Exploratory browser voyage toolkit"
+    }
+  ]
+}
